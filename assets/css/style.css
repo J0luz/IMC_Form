@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@900&family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Rokkitt:wght@200;400;700&display=swap');
+
+:root {
+  --primary-color: linear-gradient(
+    45deg,
+    rgb(13, 216, 206),
+    rgb(126, 236, 190)
+  );
+}
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+html {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  background-repeat: no-repeat;
+  animation: change 10s ease-in-out infinite;
+}
+body {
+  margin: 0;
+  padding: 0;
+
+  height: 100vh;
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+h1 {
+  text-align: center;
+}
+.container {
+  max-width: 572px;
+
+  margin: 50px auto;
+
+  background: rgb(255, 255, 255);
+  padding: 20px 50px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px rgb(15, 15, 15);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+form input,
+form label {
+  width: 100%;
+  margin-bottom: 10px;
+  border: none;
+}
+
+form input {
+  padding: 10px;
+  border-bottom: solid 1px rgb(201, 195, 195);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+input[type='submit'] {
+  font-weight: 700;
+  width: 300px;
+  margin-top: 20px;
+  margin-left: 86px;
+
+  border-radius: 10px;
+  transition: all 0.1s ease;
+
+  background: rgb(143, 240, 172);
+}
+
+input[type='submit']:hover {
+  background: linear-gradient(to bottom, rgb(13, 216, 206), rgb(126, 236, 190));
+  letter-spacing: 0.3px;
+}
+.error-input {
+  border-bottom: solid 1px red;
+}
+.paragrafo-resultado .bad {
+  background: rgb(82, 211, 147);
+  padding: 10px;
+}
+
+.bad {
+  background: red;
+}
+
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
